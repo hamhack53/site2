@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>quiz</title>
+    <script src="js/code.js"></script>
+</head>
+<body onload="init()">
+    <header>
+        <h1>Inscription</h1>
+    </header>
+    <form >
+        <fieldset id="f1">
+            <legend>Informations personnelles</legend>
+            <div>
+                <label for="no" class="lt">Nom et prenom*</label>
+                <input type="text" name="no" id="no" required>
+            </div>
+            <div>
+                <label for="dt" class="lt">date de naissance*</label>
+                <input type="date" name="dt" id="dt" required>
+            </div>
+            <div>
+                <label class="lt">Genre*</label>
+                <input type="radio" name="ge" id="r1" required>
+                <label for="r1">Masculin</label>
+                <input type="radio" name="ge" id="r2" required>
+                <label for="r2">Féminin</label>
+            </div>
+            <div>
+                <label class="lt">Niveau*</label>
+                <select id="s1" required>
+                    <option value="0">votre choix</option>
+                    <option value="1">Eléve</option>
+                    <option value="2">Etudiant</option>
+                    <option value="3">professionnel</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset id="f2">
+            <legend >Question du quiz(10 Point=2+2+3+3)</legend>
+            <div>
+                <label class="lt">Q1:L'element HTML SPAN est de type :</label>
+                <input type="radio" name="r1" id="in">
+                <label for="r2">Inline</label>
+                <input type="radio" name="r1" id="bl">
+                <label for="r2">Block</label>
+                <input type="radio" name="r1" id="bl">
+                <label for="r2">Inline-Block</label>
+            </div>
+            <div>
+                <label class="lt">Q2:Dans l'instuction N=prompt("taper une donnée"):</label>
+                <input type="radio" name="r2" id="nu">
+                <label for="r2">Number</label>
+                <input type="radio" name="r2" id="st">
+                <label for="r2">String</label>
+                <input type="radio" name="r2" id="bo">
+                <label for="r2">Boolean</label>
+            </div>
+            <div>
+                <label class="lt">Q3:cocher les balises HTML sémentiques :</label>
+                <input type="checkbox" name="cb" id="cb1">
+                <label for="cb1">DIV</label>
+                <input type="checkbox" name="cb" id="cb2">
+                <label for="cb2">NAV</label>
+                <input type="checkbox" name="cb" id="cb3">
+                <label for="cb3">FOOTER</label>
+            </div>
+            <div>
+                <label class="lt">Q4:La proprieté CSS qui permet d'aligner un element de type Inline:</label>
+                <select id="s2">
+                    <option value="0">votre choix</option>
+                    <option value="1">Margin</option>
+                    <option value="2">Text-align</option>
+                    <option value="3">Padding</option>
+                </select>
+            </div>
+            <div id="bt">
+                <input type="button" name="va" id="va" value="Valider" onclick="travail()">
+                <input type="reset" name="an" id="an" value="Annuler">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>nombre de questions repondues </legend>
+            <div>
+                <label class="lt">nombre</label>
+                <input type="range" name="ra" id="ra" min="0" max="4" value="0" oninput="nombre()">
+                <output id="op">0</output>
+                <output id="mi"></output>
+                <output id="maa"></output>
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+    </footer>
+</body>
+</html>

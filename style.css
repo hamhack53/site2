@@ -1,0 +1,63 @@
+header{
+    background-color: brown;
+    padding:20px;
+    text-align: center;
+    color: aliceblue;
+}
+form{
+    width: fit-content;
+    margin: auto;
+}
+fieldset{
+    width: fit-content;
+    margin: 10px auto;
+    padding:10px;
+    border: 2px solid blue;
+}
+*{
+    border-radius: 30px;
+}
+div{
+    margin: 15px auto;
+}
+footer{
+    background-color: brown;
+    color: aliceblue;
+    padding: 25px;
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+}
+#f1 .lt{
+    font-weight: bold;
+    color: blue;
+    display: inline-block;
+    width: 150px;
+}
+#f2 .lt{
+    font-weight: bold;
+    color: blue;
+    display: inline-block;
+    width: 500px;
+}
+#bt{
+    text-align: right;
+
+}
+legend{
+    color: brown;
+    font-weight: bold;
+}
+#va,#an{
+    cursor: pointer;
+}
+footer p{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+output{
+    border: 1px solid black;
+    padding: 8px;
+}
